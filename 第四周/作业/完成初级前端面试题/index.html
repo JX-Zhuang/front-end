@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>初级前端面试题</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<!--页面开始-->
+    <div class="page">
+    <!--标题-->
+        <h1>初级Web前端工程师面试必看面试题</h1>
+    <!--h2是题目-->
+        <h2>1.对WEB标准以及W3C的理解与认识？</h2>
+    <!--p是答案-->
+        <p>
+            &nbsp;&nbsp;标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打版本而不需要复制内容、提高网站易用性。
+        </p>
+        <h2>2.XHTML和HTML有什么区别？</h2>
+        <p>
+            &nbsp;&nbsp;HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+        </p>
+        <p>最主要的不同：</p>
+        <p>XHTML元素必须被正确的嵌套。</p>
+        <p>XHTML元素必须被关闭。</p>
+        <p>标签名必须用小写字母</p>
+        <p>XTML文档必须拥有根元素。</p>
+        <h2>
+    	3.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?
+    	</h2>
+        <p>
+            &nbsp;&nbsp;用于声明文档使用哪种规范（HTML/XHTML）一般为严格过度基于框架的html文档加入XML声明可触发，解析方式更改为IE5.5拥有IE5.5的bug。
+        </p>
+        <h2>4.行内元素有哪些?块级元素有哪些?CSS的盒模型?</h2>
+        <p>块级元素：div p h1 h2 h3 h4 form ul等</p>
+        <p>行内元素：a b br i span input img select等</p>
+        <p>CSS盒模型：标准盒模型，怪异盒模型。border margin padding</p>
+        <h2>
+    	5.CSS引入的方式有哪些? link和@import的区别是?
+    	</h2>
+        <p>内联 内嵌 外链 导入</p>
+        <p>区别：同时加载</p>
+        <p>
+            前者无兼容性，后者CSS2.1以下不支持。link是html加载前就引用，而import是html加载后才引用。
+        </p>
+        <p>Link 支持javascript改变样式，后者不可以</p>
+        <h2>
+    	6.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?
+    	</h2>
+        <p>标签选择符，类选择符，id选择符</p>
+        <p>继承不如指定，id>class>标签选择</p>
+        <p>important的优先级高</p>
+        <h2>
+    	7.前端页面有哪三层构成，分别是什么?作用是什么?
+    	</h2>
+        <p>结构层html，表示层css，行为层js</p>
+        <h2>
+    	8.CSS的基本语句构成是?
+    	</h2>
+        <p>选择器{属性1：值1；属性2：值2；...}</p>
+        <h2>
+    	9.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?
+    	</h2>
+        <p>Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)</p>
+        <h2>
+    	10.写出几种IE6 BUG的解决方法
+    	</h2>
+        <p>1.双边距bug，float引起的，使用display</p>
+        <p>2.3像素问题，使用float引起的，使用display：inline -3px</p>
+        <p>3.超链接hover点击后失效，使用正确的书写顺序link，visited，hover，active</p>
+        <p>4.ie，z-index问题，给父级添加position：relative</p>
+        <p>5.png透明，使用js代码</p>
+        <p>6.min-height最小高度！important解决</p>
+        <p>7.select在ie6下遮盖，使用iframe嵌套</p>
+        <p>
+            8.为什么没有办法定义1px左右的宽度容器（ie6默认的行高造成的，使用over：hidden，zoom：0.08，lin-height：1px）
+        </p>
+        <p>9.ie6不支持！important</p>
+        <h2>
+    	11.img标签上title与alt属性的区别是什么?
+    	</h2>
+        <p>alt当图片不显示时，用文字代表</p>
+        <p>title为该属性提供信息</p>
+        <h2>
+    	12.描述css reset的作用和用途。
+    	</h2>
+        <p>
+            &nbsp;&nbsp;reset重置浏览器的css默认属性，浏览器的内核不同，样式不同，然后重置，让他们统一。
+        </p>
+        <h2>
+    	13.解释css sprites，如何使用。
+    	</h2>
+        <p>
+            &nbsp;&nbsp;css精灵，把一些小的图片整合到一张大的图片上，减轻服务器对图片的请求数量。
+        </p>
+        <h2>
+    	14.浏览器标准模式和怪异模式之间的区别是什么?
+    	</h2>
+        <p>盒子模型，渲染模式的不同。</p>
+        <h2>
+    	15.你如何对网站的文件和资源进行优化?期待的解决方案包括：
+    	</h2>
+        <p>文件合并</p>
+        <p>文件最小化/文件压缩</p>
+        <p>使用CDN托管</p>
+        <p>缓存的使用</p>
+        <h2>
+    	16.什么是语义化的HTML?
+    	</h2>
+        <p>直观的认识标签，对于搜索引擎的抓取有好处。</p>
+        <h2>
+    	17.清除浮动的几种方式，各自的优缺点
+    	</h2>
+        <p>
+            1.使用空标签清除浮动clear：both（理论上能清除任何标签，增加无意义的标签）
+        </p>
+        <p>
+            2.使用overflow：auto（空标签元素清除浮动而不得不增加无意代码的弊端，使用zoom:1用于兼容ie）
+        </p>
+        <p>
+            3.使用after伪元素清楚浮动（用于非ie浏览器）
+        </p>
+        <h2>18.css hack</h2>
+        <p>_margin\\ie6</p>
+        <p>+margin\\ie7</p>
+        <p>margin:0 auto\9\\所有ie</p>
+        <p>margin\0\\ie8及以上版本</p>
+    </div>
+</body>
+
+</html>

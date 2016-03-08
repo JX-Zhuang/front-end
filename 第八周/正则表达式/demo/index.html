@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>正则表达式</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	var pat=/my/g;
+	var str='my code is my code';
+	console.log(pat.exec(str));
+	console.log(pat.exec('you my are my love'));
+	var str2='user Visit user';
+	var pat2=/User/ig;
+	console.log(str2.match(pat2));
+	var str2='Visit user Useruseruser';
+	var pat2=/User/ig;
+	console.log(str2.match(pat2));
+	var str3='whello world Hello';
+	console.log(str3.search(/Hello/ig));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,473 @@
+/*导航栏*/
+
+.header a:hover {
+    color: #1abc9c;
+}
+
+
+/*按钮*/
+
+.btn a:hover {
+    color: #ffffff;
+    background: #78d8c5;
+}
+
+
+/*关于我的小图标*/
+
+#aboutme img:hover {
+    -webkit-transform: rotateZ(45deg) scale(1.2);
+}
+
+
+/*关于我的标题*/
+
+#aboutme h2:hover {
+    -webkit-transform: scale(1.5);
+}
+
+
+/*work的动画*/
+
+@-webkit-keyframes ani_side {
+    0% {}
+    20% {
+        -webkit-transform: translateX(440px);
+    }
+    50% {
+        -webkit-transform: translateX(440px);
+    }
+    80% {
+        -webkit-transform: translateX(440px);
+    }
+    100% {
+        -webkit-transform: translateX(-440px);
+    }
+}
+
+@-webkit-keyframes ani_work_pic {
+    0% {}
+    20% {
+        -webkit-transform: scale(1.2);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+    }
+    80% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+.work_pic:hover .side {
+    -webkit-animation: ani_side 5s;
+}
+
+.work_pic:hover {
+    -webkit-animation: ani_work_pic 5s;
+}
+
+
+/*footer的图标*/
+
+@-webkit-keyframes ani_footer_img {
+    0% {}
+    10% {
+        -webkit-transform: rotateY(45deg);
+    }
+    20% {
+        -webkit-transform: rotateY(90deg);
+    }
+    30% {
+        -webkit-transform: rotateY(135deg);
+    }
+    40% {
+        -webkit-transform: rotateY(180deg);
+    }
+    50% {
+        -webkit-transform: rotateY(225deg);
+    }
+    60% {
+        -webkit-transform: rotateY(270deg);
+    }
+    70% {
+        -webkit-transform: rotateY(315deg);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+    }
+}
+
+.footer img:hover {
+    -webkit-animation: ani_footer_img 0.5s;
+}
+
+
+/*关于我的小图标*/
+
+#aboutme img:hover {
+    -moz-transform: rotateZ(45deg) scale(1.2);
+}
+
+
+/*关于我的标题*/
+
+#aboutme h2:hover {
+    -moz-transform: scale(1.5);
+}
+
+
+/*work的动画*/
+
+@-moz-keyframes ani_side {
+    0% {}
+    20% {
+        -moz-transform: translateX(440px);
+    }
+    50% {
+        -moz-transform: translateX(440px);
+    }
+    80% {
+        -moz-transform: translateX(440px);
+    }
+    100% {
+        -moz-transform: translateX(-440px);
+    }
+}
+
+@-moz-keyframes ani_work_pic {
+    0% {}
+    20% {
+        -moz-transform: scale(1.2);
+    }
+    50% {
+        -moz-transform: scale(1.2);
+    }
+    80% {
+        -moz-transform: scale(1.2);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+.work_pic:hover .side {
+    -moz-animation: ani_side 5s;
+}
+
+.work_pic:hover {
+    -moz-animation: ani_work_pic 5s;
+}
+
+
+/*footer的图标*/
+
+@-moz-keyframes ani_footer_img {
+    0% {}
+    10% {
+        -moz-transform: rotateY(45deg);
+    }
+    20% {
+        -moz-transform: rotateY(90deg);
+    }
+    30% {
+        -moz-transform: rotateY(135deg);
+    }
+    40% {
+        -moz-transform: rotateY(180deg);
+    }
+    50% {
+        -moz-transform: rotateY(225deg);
+    }
+    60% {
+        -moz-transform: rotateY(270deg);
+    }
+    70% {
+        -moz-transform: rotateY(315deg);
+    }
+    100% {
+        -moz-transform: rotateY(360deg);
+    }
+}
+
+.footer img:hover {
+    -moz-animation: ani_footer_img 0.5s;
+}
+
+
+/*关于我的小图标*/
+
+#aboutme img:hover {
+    -ms-transform: rotateZ(45deg) scale(1.2);
+}
+
+
+/*关于我的标题*/
+
+#aboutme h2:hover {
+    -ms-transform: scale(1.5);
+}
+
+
+/*work的动画*/
+
+@-ms-keyframes ani_side {
+    0% {}
+    20% {
+        -ms-transform: translateX(440px);
+    }
+    50% {
+        -ms-transform: translateX(440px);
+    }
+    80% {
+        -ms-transform: translateX(440px);
+    }
+    100% {
+        -ms-transform: translateX(-440px);
+    }
+}
+
+@-ms-keyframes ani_work_pic {
+    0% {}
+    20% {
+        -ms-transform: scale(1.2);
+    }
+    50% {
+        -ms-transform: scale(1.2);
+    }
+    80% {
+        -ms-transform: scale(1.2);
+    }
+    100% {
+        -ms-transform: scale(1);
+    }
+}
+
+.work_pic:hover .side {
+    -ms-animation: ani_side 5s;
+}
+
+.work_pic:hover {
+    -ms-animation: ani_work_pic 5s;
+}
+
+
+/*footer的图标*/
+
+@-ms-keyframes ani_footer_img {
+    0% {}
+    10% {
+        -ms-transform: rotateY(45deg);
+    }
+    20% {
+        -ms-transform: rotateY(90deg);
+    }
+    30% {
+        -ms-transform: rotateY(135deg);
+    }
+    40% {
+        -ms-transform: rotateY(180deg);
+    }
+    50% {
+        -ms-transform: rotateY(225deg);
+    }
+    60% {
+        -ms-transform: rotateY(270deg);
+    }
+    70% {
+        -ms-transform: rotateY(315deg);
+    }
+    100% {
+        -ms-transform: rotateY(360deg);
+    }
+}
+
+.footer img:hover {
+    -ms-animation: ani_footer_img 0.5s;
+}
+
+
+/*关于我的小图标*/
+
+#aboutme img:hover {
+    -o-transform: rotateZ(45deg) scale(1.2);
+}
+
+
+/*关于我的标题*/
+
+#aboutme h2:hover {
+    -o-transform: scale(1.5);
+}
+
+
+/*work的动画*/
+
+@-o-keyframes ani_side {
+    0% {}
+    20% {
+        -o-transform: translateX(440px);
+    }
+    50% {
+        -o-transform: translateX(440px);
+    }
+    80% {
+        -o-transform: translateX(440px);
+    }
+    100% {
+        -o-transform: translateX(-440px);
+    }
+}
+
+@-o-keyframes ani_work_pic {
+    0% {}
+    20% {
+        -o-transform: scale(1.2);
+    }
+    50% {
+        -o-transform: scale(1.2);
+    }
+    80% {
+        -o-transform: scale(1.2);
+    }
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+.work_pic:hover .side {
+    -o-animation: ani_side 5s;
+}
+
+.work_pic:hover {
+    -o-animation: ani_work_pic 5s;
+}
+
+
+/*footer的图标*/
+
+@-o-keyframes ani_footer_img {
+    0% {}
+    10% {
+        -o-transform: rotateY(45deg);
+    }
+    20% {
+        -o-transform: rotateY(90deg);
+    }
+    30% {
+        -o-transform: rotateY(135deg);
+    }
+    40% {
+        -o-transform: rotateY(180deg);
+    }
+    50% {
+        -o-transform: rotateY(225deg);
+    }
+    60% {
+        -o-transform: rotateY(270deg);
+    }
+    70% {
+        -o-transform: rotateY(315deg);
+    }
+    100% {
+        -o-transform: rotateY(360deg);
+    }
+}
+
+.footer img:hover {
+    -o-animation: ani_footer_img 0.5s;
+}
+
+
+/*关于我的小图标*/
+
+#aboutme img:hover {
+    transform: rotateZ(45deg) scale(1.2);
+}
+
+
+/*关于我的标题*/
+
+#aboutme h2:hover {
+    transform: scale(1.5);
+}
+
+
+/*work的动画*/
+
+@keyframes ani_side {
+    0% {}
+    20% {
+        transform: translateX(440px);
+    }
+    50% {
+        transform: translateX(440px);
+    }
+    80% {
+        transform: translateX(440px);
+    }
+    100% {
+        transform: translateX(-440px);
+    }
+}
+
+@keyframes ani_work_pic {
+    0% {}
+    20% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.work_pic:hover .side {
+    animation: ani_side 5s;
+}
+
+.work_pic:hover {
+    animation: ani_work_pic 5s;
+}
+
+
+/*footer的图标*/
+
+@keyframes ani_footer_img {
+    0% {}
+    10% {
+        transform: rotateY(45deg);
+    }
+    20% {
+        transform: rotateY(90deg);
+    }
+    30% {
+        transform: rotateY(135deg);
+    }
+    40% {
+        transform: rotateY(180deg);
+    }
+    50% {
+        transform: rotateY(225deg);
+    }
+    60% {
+        transform: rotateY(270deg);
+    }
+    70% {
+        transform: rotateY(315deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.footer img:hover {
+    animation: ani_footer_img 0.5s;
+}

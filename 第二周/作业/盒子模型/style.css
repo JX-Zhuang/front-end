@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.outer{
+	width: 200px;
+	display: inline-block;
+}
+.xiehe{
+	padding: 10px;/*鞋盒内部填充--棉花*/
+	width: 100px;
+	height: 100px;
+	background: #96D224;
+	margin: 50px;
+	border: 5px solid rgb(99, 83, 132);/*鞋盒的材料*/
+}
+.xiezi{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	background: #00FFDE;
+}
+
+.xiehe1{             /*先定义鞋盒的宽度高度*/
+	padding: 10px;/*鞋盒内部填充--棉花*/
+	width: 130px;
+	height: 130px;
+	background: #96D224;
+	margin: 50px;
+	border: 5px solid rgb(99, 83, 132);/*鞋盒的材料*/
+	box-sizing:border-box;/*怪异盒模型*/
+}
+.xiezi1{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	background: #00FFDE;
+}
+.con-1{
+	margin: 50px;
+	width: 800px;
+	display: -webkit-flex;
+	-webkit-flex-direction:row;/*横向排列*/
+}
+.con-2{
+	margin: 50px;
+	height: 300px;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;/*纵向排列*/
+}
+.first{
+	-webkit-flex:1;
+	width: 100px;
+	height: 100px;
+	background: #54D654;
+}
+.second{
+	-webkit-flex:2;
+	width: 100px;
+	height: 100px;
+	background: #6666EC;
+}
+.third{
+	-webkit-flex:3;
+	width: 100px;
+	height: 100px;
+	background: #ECAB66;
+}
+/*order*/
+.f-o{
+	-webkit-order:2;
+}
+.s-o{
+	-webkit-order:3;
+}
+.t-o{
+	-webkit-order:1;
+}
+/*flexbox居中*/
+.box{
+	display: -webkit-box;
+	-webkit-box-pack:center;/*横向居中*/
+	-webkit-box-align:center;/*纵向居中*/
+	margin: 50px;
+	width: 100px;
+	height: 100px;
+	background: #54D654;
+}
+.center{
+	width: 50px;
+	height: 50px;
+	background: rgb(0, 206, 255);
+	-webkit-box-orient:vertical;
+}
+/*分栏*/
+.col{
+	-webkit-column-count:4;
+	margin:auto 50px 10px 50px;
+}
+.left1{
+	background-color: #54D654;
+	height: 100px;
+}
+.left2{
+	background-color: #6666EC;
+	height: 100px;
+}
+.right1{
+	background-color: #ECAB66;
+	height: 100px;
+}
+.right2{
+	background-color: #E4E463;
+	height: 100px;
+}

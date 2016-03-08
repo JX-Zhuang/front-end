@@ -1,0 +1,40 @@
+ul,li{
+	list-style: none;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+.main{
+	margin-top: 3px;
+}
+
+.main>a,.hmain>a{
+	background: gray;
+	display: block;
+	width: 100px;
+	height: 30px;
+}
+.main ul,.hmain ul{
+	background: #ccc;
+	width: 120px;
+	display: none;
+}
+a{
+	text-decoration: none;
+	padding-left: 20px;
+	display: block;
+	width: 80px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.main a,.hmain a{
+	color: white;
+}
+.main li a,.hmain li a{
+	color: black;
+}
+.hmain{
+	float: left;
+	margin-left: 3px;
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "宋体";
+    font-size: 40px;
+}
+
+
+/*计算器*/
+
+#box {
+    width: 430px;
+    height: 430px;
+    border: 1px solid #888a8f;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #efefef;
+}
+
+input {
+    margin: 8px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+    width: 70px;
+    height: 45px;
+    float: left;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*计算框*/
+
+#calFrame {
+    width: 430px;
+    height: 80px;
+    display: block;
+    background-color: #e6fffa;
+    text-align: right;
+    font-family: '宋体';
+    font-size: 30px;
+    cursor: auto;
+    margin: 5px 0;
+}
+
+
+/*退格键和清除键*/
+
+#clear,#back {
+    background: -webkit-linear-gradient(#dd834c, #c05518);
+    background: -moz-linear-gradient(#dd834c, #c05518);
+    background: -o-gradient(#dd834c, #c05518);
+    background: -ms-linear-gradient(#dd834c, #c05518);
+    background: linear-gradient(#dd834c, #c05518);
+    border-color: #c05518;
+    color: #ffffff;
+}
+
+
+/*数字，三角函数，π，e*/
+
+.num ,#dot{
+    background: -webkit-linear-gradient(#e9e9ea, #bfc1c6);
+    background: -moz-linear-gradient(#e9e9ea, #bfc1c6);
+    background: -o-linear-gradient(#e9e9ea, #bfc1c6);
+    background: -ms-linear-gradient(#e9e9ea, #bfc1c6);
+    background: linear-gradient(#e9e9ea, #bfc1c6);
+}
+
+
+/*加减乘除*/
+
+.operator1 {
+    background: -webkit-linear-gradient(#9ca3a8, #757d83);
+    background: -moz-linear-gradient(#9ca3a8, #757d83);
+    background: -o-linear-gradient(#9ca3a8, #757d83);
+    background: -ms-linear-gradient(#9ca3a8, #757d83);
+    background: linear-gradient(#9ca3a8, #757d83);
+    border-color: #757d83;
+    color: #474747;
+}
+
+
+/*正负，倒数，百分号，根号，等于*/
+
+.operator2 {
+    background: -webkit-gradient(#6B6A6A, #000000);
+    background: -moz-gradient(#6B6A6A, #000000);
+    background: -o-gradient(#6B6A6A, #000000);
+    background: -ms-linear-gradient(#6B6A6A, #000000);
+    background: linear-gradient(#6B6A6A, #000000);
+    border-color: #2d2d2d;
+    color: #ffffff;
+}

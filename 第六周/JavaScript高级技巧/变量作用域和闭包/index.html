@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var i=100;
+	
+	function text () {
+		var i=1000;
+		console.log(i)
+		return function(){
+			var k=50;
+			return k;
+		}
+	}text();
+	var t=text()();
+	console.log('t:'+t)
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    #domdiv {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+    
+    div {
+        height: 100px;
+        width: 100px;
+        background: blue;
+        margin-bottom: 10px;
+        overflow-y: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="domdiv">
+        <p id="myp">123</p>
+        点我点我
+    </div>
+    <img src="http://pic.nipic.com/2007-11-09/2007119122519868_2.jpg" width="300">
+    <script type="text/javascript">
+    var dom = document.getElementsByTagName('div');
+    console.log(dom);
+    //dom[0].childNodes='hellow world';
+    //document.getElementsByTagName('img')[0].src="http://pic14.nipic.com/20110522/7411759_164157418126_2.jpg"
+    var img = document.getElementsByTagName('img')[0];
+    img.setAttribute('src', 'http://pic14.nipic.com/20110522/7411759_164157418126_2.jpg');
+    var para = document.createElement('h1');
+    para.innerHTML = 'hellow world';
+    //dom[0].appendChild(para);
+   // var body=document.getElementsByTagName('body');
+    //body[0].insertBefore(para, dom[0]);
+   // dom[0].removeChild(document.getElementById('myp'));
+    var replaceBtn=document.createElement('a');
+    replaceBtn.innerText='百度一下';
+    dom[0].replaceChild(replaceBtn,document.getElementById('myp'));
+    </script>
+</body>
+
+</html>

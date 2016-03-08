@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    div {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .div1 {
+        position: relative;
+        z-index: 1;
+        background: black;
+        transition: z-index 2s ease-in;
+    }
+    
+    .div2 {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        background: green;
+        transition: z-index 2s ease-in;
+    }
+    
+    .divbox {
+    	position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .divbox:hover .div1 {
+        /*animation:diva 2s ease-in;*/
+        z-index: 0;
+    }
+    
+    .divbox:hover .div2 {
+        /*animation:divb 2s ease-in;*/
+        z-index: 1;
+    }
+    @-webkit-keyframes diva{
+    	from{z-index: 1}
+    	to{z-index: 0}
+    }
+    @-webkit-keyframes divb{
+    	from{z-index: 0}
+    	to{z-index: 1}
+    }
+    </style>
+</head>
+
+<body>
+    <div class="divbox">
+        <div class="div1">
+        </div>
+        <div class="div2"></div>
+    </div>
+</body>
+
+</html>

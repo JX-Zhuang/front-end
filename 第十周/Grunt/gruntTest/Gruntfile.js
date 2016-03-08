@@ -1,0 +1,41 @@
+module.exports=function(grunt) {
+	// Project configuration.
+	grunt.initConfig({
+		pkg:grunt.file.readJSON('package.json'),
+		uglify:{
+			options:{
+				banner:'/*! <%= pkg.name %> <%= grunt.template.today("yyy-mm-dd") %>*/\n'
+			},
+			my_target:{
+				files:[
+					{
+						src:'JavaScript/index.js',
+						dest:'build/index.min.js'
+					},
+					{
+						src:'JavaScript/jquery.min.js',
+						dest:'build/jquery.min.js'
+					}
+				]
+			}
+		},
+		concat:{
+			bar:{
+				src:['build/*.js'],
+				dest:'dest/all.min.js'
+			}
+		},
+		watch:{
+			files:['JavaScript/index.js'],
+			tasks:['uglify','concat']
+		}
+	});
+	//加载包含“uglify”任务的插件
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	//加载包含“concat”任务的插件
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	//加载包含“watch”任务的插件
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	//默认被执行的任务列表
+	grunt.registerTask('default',['uglify','concat','watch']);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.box1{
+		width: 500px;
+		height: 500px;
+		border: 1px solid black;
+
+	}
+	.box2{
+		width: 300px;
+		height: 300px;
+		border:1px solid black;
+		margin: 0 auto;
+	}
+	.box3{
+		width: 200px;
+		height: 200px;
+		border:1px solid black;
+		margin: 0 auto;
+	}
+	.box4{
+		width: 100px;
+		height: 100px;
+		border:1px solid black;
+		margin: 0 auto;
+	}
+	.box4{
+		width: 100px;
+		height: 100px;
+		border:1px solid black;
+	}
+	.box4:hover .box5{
+		display: block;
+	z-index: 99;/*让右侧导航栏在最上面，覆盖其他元素*/
+	position: fixed;/*固定在右侧*/
+	height: 100%;/*让右侧菜单填满屏幕*/
+	}
+	.box5{
+		width: 100px;
+		height: 100px;
+		border:1px solid black;
+		margin-left: 500px;
+		display: none;
+	}
+	</style>
+</head>
+<body>
+<div class="box1">
+	<div class="box2">
+		<div class="box3">
+			<div class="box4"></div>
+		</div>
+	</div>
+</div>
+<div class="box4">
+	<div class="box5">
+		
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#test{
+	width: 200px;
+	height: 200px;
+	background: blue;
+	margin: 20px;
+}
+
+#enter,#over{
+	height: 100px;
+	width: 100px;
+	background: green;
+	margin: 20px;
+}
+#enter div,#over div{
+	width: 20px;
+	height: 20px;
+	background: white;
+}
+
+#div1,#div2,#div3{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	margin: 10px;
+}
+.addCss1{
+	width: 100px;
+	height: 100px;
+	background: red
+}
+.addCss2{
+	width: 100px;
+	height: 100px;
+	background: blue
+}

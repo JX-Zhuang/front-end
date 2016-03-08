@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.outer{
+		width: 100px;
+		height: 100px;
+		background: green
+	}
+	.test{
+		width:100px;height:1000px;border:1px solid black;display:none
+	}
+	.outer:hover .test{
+		display: block;
+	}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="test"></div>
+	</div>
+</body>
+</html>

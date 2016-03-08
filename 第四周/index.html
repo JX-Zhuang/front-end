@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.a{
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		background: green;
+		overflow: hidden;
+	}
+	.b{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		background: blue;
+		margin-left: -100px;
+	}
+	@-webkit-keyframes ani_b{
+		from{}
+		to{-webkit-transform:translateX(300px);}
+	}
+	.a:hover .b{
+		-webkit-animation:ani_b 3s;
+		
+	}
+	.b:hover{
+		-webkit-transform:scaleX(2.0);
+	}
+	.c,.f{
+		width: 800px;
+		
+	}
+	.d,.g{
+		width: 300px;
+		height: 300px;
+		background: blue;
+		display: inline-block;
+	}
+	.e,.h{
+		width: 300px;
+		height: 300px;
+		background: green;
+		float: right;
+		display: inline-block;
+	}
+	</style>
+</head>
+<body>
+<div class="a">
+	<div class="b"></div>
+</div>
+<div class="c">
+	<div class="d"></div>
+	<div class="e"></div>
+</div>
+<div class="f">
+	<div class="g"></div>
+	<div class="h"></div>
+</div>
+</body>
+</html>

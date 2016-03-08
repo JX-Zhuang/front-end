@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- saved from url=(0122)file:///C:/Users/jiaxiang/Documents/Tencent%20Files/411546535/FileRecv/javascript%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+*{margin:0;padding:0;}
+body {
+	font:13.34px helvetica,arial,freesans,clean,sans-serif;
+	color:black;
+	line-height:1.4em;
+	background-color: #F8F8F8;
+	padding: 0.7em;
+}
+p {
+	margin:1em 0;
+	line-height:1.5em;
+}
+table {
+	font-size:inherit;
+	font:100%;
+	margin:1em;
+}
+table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+input[type=text],input[type=password],input[type=image],textarea{font:99% helvetica,arial,freesans,sans-serif;}
+select,option{padding:0 .25em;}
+optgroup{margin-top:.5em;}
+pre,code{font:12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;}
+pre {
+	margin:1em 0;
+	font-size:12px;
+	background-color:#eee;
+	border:1px solid #ddd;
+	padding:5px;
+	line-height:1.5em;
+	color:#444;
+	overflow:auto;
+	-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;border-radius:3px;
+}
+pre code {
+	padding:0;
+	font-size:12px;
+	background-color:#eee;
+	border:none;
+}
+code {
+	font-size:12px;
+	background-color:#f8f8ff;
+	color:#444;
+	padding:0 .2em;
+	border:1px solid #dedede;
+}
+img{border:0;max-width:100%;}
+abbr{border-bottom:none;}
+a{color:#4183c4;text-decoration:none;}
+a:hover{text-decoration:underline;}
+a code,a:link code,a:visited code{color:#4183c4;}
+h2,h3{margin:1em 0;}
+h1,h2,h3,h4,h5,h6{border:0;}
+h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+h3{margin-top:1em;}
+hr{border:1px solid #ddd;}
+ul{margin:1em 0 1em 2em;}
+ol{margin:1em 0 1em 2em;}
+ul li,ol li{margin-top:.5em;margin-bottom:.5em;}
+ul ul,ul ol,ol ol,ol ul{margin-top:0;margin-bottom:0;}
+blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+dt{font-weight:bold;margin-left:1em;}
+dd{margin-left:2em;margin-bottom:1em;}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<title>javascript编码规范</title>
+
+</head>
+<body>
+<h1>javascript编码规范</h1>
+
+<h2>命名规范</h2>
+
+<h3>变量命名</h3>
+
+<p>变量命名使用有意义的单词和驼峰式命名。
+临时变量简写：str,num,bol,fun,arr。
+循环变量简写：i , j , k。</p>
+
+<h3>全局变量及常量规范</h3>
+
+<p>全局变量使用g作为前缀，如gUserName , gLoginTime。
+常量全部字母都大写，如： PI , COPYRIGHT。注:常量可存在于函数中，也可存在于全局。</p>
+
+<h3>函数命名规范</h3>
+
+<ol>
+<li>统一使用动词或动词加名词的形式。如getVersion() , submitForm()。</li>
+<li>涉及返回逻辑值的函数可以使用is , has 等表示逻辑的词语代替动词。 内部函数前加上 ‘_‘前缀。</li>
+<li>可选参数以 ‘opt’ 开头.</li>
+</ol>
+
+
+<h3>类的命名</h3>
+
+<ul>
+<li>类名首字母大写。</li>
+<li>属性名为具有一定意义的名词。私有属性加 “_“。</li>
+<li>方法名为有意义的动词[+名词]，首字母小写。私有方法加 ‘_”.</li>
+</ul>
+
+
+<h3>其它</h3>
+
+<ul>
+<li>命名无特殊情况，请使用英语表示。切勿用汉语拼音。</li>
+<li>变量名应该明确必要，避免容易混淆的缩写。</li>
+<li>应该避免双重否定意义的变量，例如：bIsNotError, bIsNotFound，不可取。</li>
+<li>变量的生命周期保持可用范围最小。</li>
+<li>循环变量在循环中定义。</li>
+<li>避免在条件中执行语句。</li>
+<li>重复使用的具有相同意义的数字，用变量代替。</li>
+</ul>
+
+
+<p>注：window对象中只可以定义全局变量，常量，类。</p>
+
+<h2>命名空间</h2>
+
+<p>为避免全局命名的冲突,在全局作用域上使用一个与项目或文件相关的名字来划分作用域空间.</p>
+
+<pre><code>    var calcultor = {};
+    calcultor.add = function() {
+    ...
+    };
+    calcultor.sub = function() {
+    ...
+    };
+</code></pre>
+
+<h2>类型</h2>
+
+<ul>
+<li>原始值：按值传递 string/number/boolean/null/undefined 注:null和undefine是不同的.</li>
+<li>复杂类型：按引用传递 object/array/function</li>
+</ul>
+
+
+<h2>对象</h2>
+
+<p>使用字面值创建对象</p>
+
+<pre><code>//bad
+var item = new Object();
+//good
+var item = {};
+</code></pre>
+
+<p>不要使用保留字作为键</p>
+
+<pre><code>//bad
+var superman = {
+    class:'superhero',
+    default:{ clark:'kent' },
+    private: true
+}
+
+//good
+var superman = {
+    klass: 'superhero',
+    defaults:{ clark: 'kent' },
+    hidden: true
+};
+</code></pre>
+
+<h2>数组</h2>
+
+<p>使用字面量创建数组</p>
+
+<pre><code>//bad
+var items = new Array();
+
+//good
+var items = [];
+</code></pre>
+
+<p>数组长度不知时，使用push添加元素</p>
+
+<pre><code>var someStack = [];
+//bad
+someStack[someStack.length] = 'abcdefg';
+
+//good
+someStack.push('abcdefg');
+
+使用slice拷贝数组
+var len = items.length,
+  itemsCopy = [],
+  i;
+//bad
+for(i = 0; i &lt; len; i++){
+    itemsCopy[i] = items[i];
+}
+//good
+itemsCopy = items.slice();
+</code></pre>
+
+<h2>函数</h2>
+
+<p>不要在一个非函数块里面声明一个函数，应该把那个函数赋给一个变 量。浏览器让你这么做，但是解析的情况是不同的。</p>
+
+<pre><code>//bad
+if(currentUser){
+    function test(){
+        console.log('Nope.');
+    }
+}
+
+//good
+if(currentUser){
+    var test = function test(){
+        console.log('Yup.');
+    };
+}
+</code></pre>
+
+<p>请勿把参数命名为 arguments,这会对函数内的 arguments对象产生影响。</p>
+
+<pre><code>//bad
+function nope(name, options, arguments){
+    //.....stuff....
+}
+//good
+function yup(name, options, args){
+    //...stuff.....
+}
+</code></pre>
+
+<h2>属性</h2>
+
+<p>当使用变量访问属性时使用中括号。</p>
+
+<pre><code>var luke = {
+    jedi: true,
+    age: 28
+};
+function getProp(prop){
+    return luke[prop];
+}
+var isJedi = getProp('jedi');
+</code></pre>
+
+<h2>条件表达式和等号</h2>
+
+<p>适当使用===和！==以及==和！=。</p>
+
+<p>条件表达式的强类型转换规则：</p>
+
+<ul>
+<li>对象被计算为true</li>
+<li>Undefined被计算为false</li>
+<li>Null被计算为false</li>
+<li>布尔值被计算为布尔的值</li>
+<li>数字如果是+0, -0,NaN被计算为false</li>
+<li>字符如果是空字符串，则被计算为false，否则为true</li>
+<li>字符串如果是空字符串，则被计算为false，否则为true</li>
+</ul>
+
+
+<h2>事件</h2>
+
+<p>当给事件附加数据时，传入一个哈希而不是原始值，这可以让后面的贡献者加入更多数据到事件数据 里而不用找出并更新那个事件的事件处理器。</p>
+
+<pre><code>//bad
+$(this).trigger('listingUpdated', listing.id);
+$(this).on('listingUpdated', function(e,listingId){
+    //do something with listingId
+});
+
+//good
+$(this).trigger('listingUpdated', {listingId: listing.id});
+
+$(this).on('listingUpdated', function(e, data){
+//do something with data.listingId
+});
+</code></pre>
+
+</body></html>

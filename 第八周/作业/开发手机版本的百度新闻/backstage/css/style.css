@@ -1,0 +1,53 @@
+body {
+    padding-top: 50px;
+}
+
+#my-nav {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+#main {
+    width: 100%;
+    border-radius: 0;
+}
+
+#main .col-md-2 {}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    padding: 20px 0;
+    background-color: #ddd;
+}
+
+.my-row {
+    padding-top: 20px;
+}
+
+.my-table {
+    border: 1px solid #428bca;
+    border-radius: 5px;
+}
+
+.my-table .panel-heading {
+    background-color: #428bca;
+    color: #fff;
+}
+
+.my-list-group li {
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: #d9edf7;
+    color: #428bca;
+}
+
+.my-progress {
+    margin-top: 20px;
+}
+
+.my-table .btn-primary {
+    margin: 0px 20px 30px;
+}

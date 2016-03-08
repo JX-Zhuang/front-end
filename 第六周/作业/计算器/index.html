@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>计算器</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="box">
+        <form>
+            <input type="text" id="calFrame">
+            <!--计算框-->
+            <input type="button" value="&larr;" id="back">
+            <!--退格-->
+            <input type="button" value="C" id="clear" >
+            <!--清除-->
+            <input type="button" value="0" class="num">
+            <input type="button" value="+" class="operator1" onclick="operation(this)">
+            <!--加-->
+            <input type="button" value="^2" class="operator2" onclick="specialNum(Math.pow(calStr.value, 2))">
+            <!--平方-->
+            <input type="button" value="7" class="num" >
+            <input type="button" value="8" class="num" >
+            <input type="button" value="9" class="num" >
+            <input type="button" value="-" class="operator1" onclick="operation(this)">
+            <!--减-->
+            <input type="button" value="+/-" class="operator2" onclick="specialNum((0 - (calStr.value)))">
+            <!--正负数-->
+            <input type="button" value="4" class="num" >
+            <input type="button" value="5" class="num" >
+            <input type="button" value="6" class="num" >
+            <input type="button" value="×" class="operator1" onclick="operation(this)">
+            <!--乘-->
+            <input type="button" value="1/x" class="operator2" onclick="reciprocal()">
+            <!--倒数-->
+            <input type="button" value="1" class="num" >
+            <input type="button" value="2" class="num" >
+            <input type="button" value="3" class="num" >
+            <input type="button" value="÷" class="operator1" onclick="operation(this)">
+            <!--除-->
+            <input type="button" value="%" class="operator2" onclick="specialNum((calStr.value / 100))">
+            <!--百分数-->
+            <input type="button" value="." id="dot">
+            <!--小数点-->
+            <input type="button" value="sin" class="num special" onclick="specialNum(Math.sin(calStr.value * Math.PI / 180))">
+            <!--sin-->
+            <input type="button" value="cos" class="num special" onclick="specialNum(Math.cos(calStr.value * Math.PI / 180))">
+            <!--cos-->
+            <input type="button" value="=" class="operator1" onclick="equal()">
+            <!--等于-->
+            <input type="button" value="√" class="operator2" onclick="squNum()">
+            <!--开方-->
+        </form>
+    </div>
+    <script type="text/javascript" src="computer.js"></script>
+</body>
+
+</html>

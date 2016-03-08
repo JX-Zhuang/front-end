@@ -1,0 +1,326 @@
+/*眼睛*/
+.ball{
+    animation-name:ball;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes ball{
+    from{transform:translateX(-10px);}
+    to{transform:translateX(10px);}
+}
+/*左手*/
+.hands-left{
+	transform-origin: right;
+    transform-style:preserve-3d;
+    animation-name:hands-left;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes hands-left{
+    from{transform:rotateZ(-40deg);}
+    to{transform:rotateZ(40deg);}
+}
+/*右手*/
+.hands-right{
+	transform-origin: left;
+    transform-style:preserve-3d;
+    animation-name:hands-right;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes hands-right{
+    from{transform:rotateZ(-40deg);}
+    to{transform:rotateZ(40deg);}
+}
+/*左脚*/
+.footer-left{
+	transform-origin: right;
+    transform-style:preserve-3d;
+    animation-name:footer-left;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes footer-left{
+    from{transform:rotateZ(-20deg);}
+    to{transform:rotateZ(6deg);}
+}
+/*右脚*/
+.footer-right{
+	transform-origin: left;
+    transform-style:preserve-3d;
+    animation-name:footer-right;
+    animation-duration:3s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes footer-right{
+    from{transform:rotateZ(-6deg);}
+    to{transform:rotateZ(20deg);}
+}
+
+/*chrome*/
+.ball{
+    -webkit-animation-name:ball;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes ball{
+    from{-webkit-transform:translateX(-10px);}
+    to{-webkit-transform:translateX(10px);}
+}
+.hands-left{
+	-webkit-transform-origin: right;
+    -webkit-transform-style:preserve-3d;
+    -webkit-animation-name:hands-left;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes hands-left{
+    from{-webkit-transform:rotateZ(-40deg);}
+    to{-webkit-transform:rotateZ(40deg);}
+}
+.hands-right{
+	-webkit-transform-origin: left;
+    -webkit-transform-style:preserve-3d;
+    -webkit-animation-name:hands-right;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes hands-right{
+    from{-webkit-transform:rotateZ(-40deg);}
+    to{-webkit-transform:rotateZ(40deg);}
+}
+.footer-left{
+	-webkit-transform-origin: right;
+    -webkit-transform-style:preserve-3d;
+    -webkit-animation-name:footer-left;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes footer-left{
+    from{-webkit-transform:rotateZ(-20deg);}
+    to{-webkit-transform:rotateZ(6deg);}
+}
+.footer-right{
+	-webkit-transform-origin: left;
+    -webkit-transform-style:preserve-3d;
+    -webkit-animation-name:footer-right;
+    -webkit-animation-duration:3s;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes footer-right{
+    from{-webkit-transform:rotateZ(-6deg);}
+    to{-webkit-transform:rotateZ(20deg);}
+}
+
+/*firefox*/
+.ball{
+    -moz-animation-name:ball;
+    -moz-animation-duration:3s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+}
+@-moz-keyframes ball{
+    from{-moz-transform:translateX(-10px);}
+    to{-moz-transform:translateX(10px);}
+}
+.hands-left{
+	-moz-transform-origin: right;
+    -moz-transform-style:preserve-3d;
+    -moz-animation-name:hands-left;
+    -moz-animation-duration:3s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+}
+@-moz-keyframes hands-left{
+    from{-moz-transform:rotateZ(-40deg);}
+    to{-moz-transform:rotateZ(40deg);}
+}
+.hands-right{
+	-moz-transform-origin: left;
+    -moz-transform-style:preserve-3d;
+    -moz-animation-name:hands-right;
+    -moz-animation-duration:3s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+}
+@-moz-keyframes hands-right{
+    from{-moz-transform:rotateZ(-40deg);}
+    to{-moz-transform:rotateZ(40deg);}
+}
+.footer-left{
+	-moz-transform-origin: right;
+    -moz-transform-style:preserve-3d;
+    -moz-animation-name:footer-left;
+    -moz-animation-duration:3s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+}
+@-moz-keyframes footer-left{
+    from{-moz-transform:rotateZ(-20deg);}
+    to{-moz-transform:rotateZ(6deg);}
+}
+.footer-right{
+	-moz-transform-origin: left;
+    -moz-transform-style:preserve-3d;
+    -moz-animation-name:footer-right;
+    -moz-animation-duration:3s;
+    -moz-animation-timing-function:linear;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:alternate;
+}
+@-moz-keyframes footer-right{
+    from{-moz-transform:rotateZ(-6deg);}
+    to{-moz-transform:rotateZ(20deg);}
+}
+/*opera*/
+.ball{
+    -o-animation-name:ball;
+    -o-animation-duration:3s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:alternate;
+}
+@-o-keyframes ball{
+    from{-o-transform:translateX(-10px);}
+    to{-o-transform:translateX(10px);}
+}
+.hands-left{
+	-o-transform-origin: right;
+    -o-transform-style:preserve-3d;
+    -o-animation-name:hands-left;
+    -o-animation-duration:3s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:alternate;
+}
+@-o-keyframes hands-left{
+    from{-o-transform:rotateZ(-40deg);}
+    to{-o-transform:rotateZ(40deg);}
+}
+.hands-right{
+	-o-transform-origin: left;
+    -o-transform-style:preserve-3d;
+    -o-animation-name:hands-right;
+    -o-animation-duration:3s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:alternate;
+}
+@-o-keyframes hands-right{
+    from{-o-transform:rotateZ(-40deg);}
+    to{-o-transform:rotateZ(40deg);}
+}
+.footer-left{
+	-o-transform-origin: right;
+    -o-transform-style:preserve-3d;
+    -o-animation-name:footer-left;
+    -o-animation-duration:3s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:alternate;
+}
+@-o-keyframes footer-left{
+    from{-o-transform:rotateZ(-20deg);}
+    to{-o-transform:rotateZ(6deg);}
+}
+.footer-right{
+	-o-transform-origin: left;
+    -o-transform-style:preserve-3d;
+    -o-animation-name:footer-right;
+    -o-animation-duration:3s;
+    -o-animation-timing-function:linear;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:alternate;
+}
+@-o-keyframes footer-right{
+    from{-o-transform:rotateZ(-6deg);}
+    to{-o-transform:rotateZ(20deg);}
+}
+/*ie*/
+.ball{
+    -ms-animation-name:ball;
+    -ms-animation-duration:3s;
+    -ms-animation-timing-function:linear;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:alternate;
+}
+@-ms-keyframes ball{
+    from{-ms-transform:translateX(-10px);}
+    to{-ms-transform:translateX(10px);}
+}
+.hands-left{
+	-ms-transform-origin: right;
+    -ms-transform-style:preserve-3d;
+    -ms-animation-name:hands-left;
+    -ms-animation-duration:3s;
+    -ms-animation-timing-function:linear;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:alternate;
+}
+@-ms-keyframes hands-left{
+    from{-ms-transform:rotateZ(-40deg);}
+    to{-ms-transform:rotateZ(40deg);}
+}
+.hands-right{
+	-ms-transform-origin: left;
+    -ms-transform-style:preserve-3d;
+    -ms-animation-name:hands-right;
+    -ms-animation-duration:3s;
+    -ms-animation-timing-function:linear;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:alternate;
+}
+@-ms-keyframes hands-right{
+    from{-ms-transform:rotateZ(-40deg);}
+    to{-ms-transform:rotateZ(40deg);}
+}
+.footer-left{
+	-ms-transform-origin: right;
+    -ms-transform-style:preserve-3d;
+    -ms-animation-name:footer-left;
+    -ms-animation-duration:3s;
+    -ms-animation-timing-function:linear;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:alternate;
+}
+@-ms-keyframes footer-left{
+    from{-ms-transform:rotateZ(-20deg);}
+    to{-ms-transform:rotateZ(6deg);}
+}
+.footer-right{
+	-ms-transform-origin: left;
+    -ms-transform-style:preserve-3d;
+    -ms-animation-name:footer-right;
+    -ms-animation-duration:3s;
+    -ms-animation-timing-function:linear;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:alternate;
+}
+@-ms-keyframes footer-right{
+    from{-ms-transform:rotateZ(-6deg);}
+    to{-ms-transform:rotateZ(20deg);}
+}

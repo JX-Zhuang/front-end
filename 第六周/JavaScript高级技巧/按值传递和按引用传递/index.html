@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function text (obj) {
+		obj.age='20';
+		console.log('inner:',obj);
+	}
+	var o={
+		name:'xiaoming'
+	}
+	text(o);
+	console.log('outer:',o)
+</script>
+</body>
+</html>

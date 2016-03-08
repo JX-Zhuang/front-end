@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>计算器</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="calculator.js"></script>
+    
+</head>
+
+<body>
+    <h1>计算器</h1>
+    <form>
+        <p>请输入第一个数字（结果也显示在这个里面）</p>
+        <input type="text" id="number1" name="number1">
+        <!--第一个数字-->
+        <p>请选择运算符</p>
+        <select id="operator" name="operator" >
+            <option value="+" >+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <!--运算符-->
+        <p>请输入第二个数字</p>
+        <input type="text" id="number2" name="number2">
+        <!--第二个数字-->
+        <p onclick="compute()" id="click">点击查看结果</p>
+    </form>
+</body>
+
+</html>

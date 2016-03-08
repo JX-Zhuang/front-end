@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	min-width: 900px;/*最小宽度，防止缩小变形*/
+}
+header{
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+footer{
+	margin-bottom:30px;
+	height: 80px;
+	text-align: center;
+}
+
+a{
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	line-height: 35px;
+		
+}
+header a{
+	float: right;
+	margin-right: 20px;
+}
+/*右侧导航栏*/
+.more{
+	
+	background-color: #38f;
+	text-align: center;
+	width: 60px;
+	height: 23px;
+	color: white;
+	line-height: 23px;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 5px;
+	display: block;
+
+}
+.outer:hover .right{
+	display: block;
+	z-index: 99;/*让右侧导航栏在最上面，覆盖其他元素*/
+	position: fixed;/*固定在右侧*/
+}
+.outer{
+	display: inline;
+	width: 60px;
+	height: 23px;
+	margin-top: 5px;
+}
+.right{
+	width: 90px;
+    height: 800px;
+    background-color: #F9F9F9;
+    display: none;
+    float: right;
+    text-align: center;
+    right: 0px;
+    top: -1px;
+}
+
+.right img{
+	display: block;
+	margin-top: 5px;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+.right a{
+	width: 60px;
+	text-decoration: none;
+	font-weight: normal;
+	display: block;
+	border-bottom:1px solid #DAD4D4; 
+	
+}
+.right a:hover{
+	text-decoration: underline;
+}
+.main{
+	margin: 100px auto;
+	width: 652px;
+	height: 170px;
+}
+.main img{
+	margin: 0 auto;
+	display: block;
+}
+
+.more{
+	
+	background-color: #38f;
+	text-align: center;
+	width: 60px;
+	height: 23px;
+	color: white;
+	line-height: 23px;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 5px;
+	display: block;
+
+}
+
+#text{
+	width: 537px;
+	height: 37px;
+	font-size: 20px;
+	padding-left: 10px;
+
+}
+#submit{
+	width: 102px;
+	height: 41px;
+	margin-left: -9px;
+	padding-top: 1px;
+	background: #2a7beb;
+	border: 0;
+	color: white;
+	font-size: 17px;
+	font-family: "微软雅黑";
+	line-height: 17px;
+	cursor:pointer;
+}
+footer .top{
+	margin: 0 auto;
+	width: 300px;
+
+}
+footer .top a{
+	display: inline;
+    margin-left: 10px;
+    color: #066DFB;
+}
+footer .bottom{
+	font-size: 13px;
+	color: #CCC;
+	font-weight: bold;
+}
+footer .bottom a{
+	display: inline;
+	color: #CCC;
+}

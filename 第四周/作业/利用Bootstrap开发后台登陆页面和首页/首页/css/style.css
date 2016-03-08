@@ -1,0 +1,238 @@
+@media (max-width: 767px) {
+    body {
+        min-width: 344px;
+    }
+    .top {
+        background: url(../img/top_767.jpg) no-repeat;
+    }
+    /*球员信息,球队信息*/
+    .personal,
+    .team {
+        background: #fcac08;
+        border: 1px solid #ffffff;
+        margin-bottom: 20px;
+    }
+    /*球员信息-->标题栏,球队信息-->标题栏*/
+    .personal_top,
+    .team_top {
+        background: url(../img/right_top.png) repeat-x;
+        height: 36px;
+        color: #861708;
+        line-height: 40px;
+    }
+    /*球员信息-->底部img，球队信息-->底部img*/
+    .personal_bottom,
+    .team_bottom {
+        width: 0;
+    }
+    .table-responsive {
+        border: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .top {
+        background: url(../img/top_750.jpg) no-repeat;
+    }
+    .personal,
+    .team {
+        background: url(../img/right_bg.gif);
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0;
+    }
+    .personal_top,
+    .team_top {
+        background: url(../img/right_top.gif) no-repeat;
+        height: 36px;
+        color: #861708;
+        line-height: 40px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .top {
+        background: url(../img/top_970.jpg) no-repeat;
+    }
+    .personal,
+    .team {
+        background: url(../img/right_bg.gif);
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+    .top {
+        background: url(../img/top.jpg) no-repeat;
+    }
+    .personal,
+    .team {
+        background: url(../img/right_bg.gif);
+        width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0;
+    }
+    .personal_top,
+    .team_top {
+        background: url(../img/right_top.gif) no-repeat;
+        height: 36px;
+        color: #861708;
+        line-height: 40px;
+    }
+}
+
+
+/*top*/
+
+.top {
+    /* width: 1000px;*/
+    height: 98px;
+    margin: 0 auto;
+}
+
+
+/*nav*/
+
+.nav {
+    /* width: 1000px;*/
+    height: 28px;
+    margin: 0 auto;
+    background: url(../img/top_b.jpg) no-repeat;
+}
+
+.nav span,
+.nav a {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    float: right;
+    color: #ffff00;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+
+/*container*/
+
+.container {
+    /*width: 1000px;*/
+    background: #ffc000;
+}
+
+
+/*left*/
+
+.con_left a {
+    width: 155px;
+    height: 35px;
+    border-radius: 10px;
+    background: url(../img/left.png) repeat-x #fca909;
+    margin-top: 10px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.con_left a:hover {
+    background: #f88e14;
+}
+
+
+/*right*/
+
+.con_right {
+    margin: 5px auto;
+}
+
+.con_right img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*球员资料*/
+
+.personal_top p {
+    margin-left: 25px;
+}
+
+.personal_top p strong {
+    font-size: 16px;
+}
+
+
+/*table*/
+
+.personal table {
+    width: 700px;
+    margin: 5px auto;
+    color: #861700;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+
+/*数据*/
+
+.personal .personal_data {
+    background: #ffefb6;
+    border: 1px solid #fcac08;
+}
+
+
+/*球队资料*/
+
+.team_top p {
+    margin-left: 25px;
+}
+
+.team_top p strong {
+    font-size: 16px;
+}
+
+
+/*table*/
+
+.team table {
+    width: 700px;
+    margin: 5px auto;
+    color: #861700;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+
+/*比赛中心*/
+
+.team .game {
+    width: 253px;
+    background-color: #ffefb6;
+}
+
+.team .game tr {
+    border: 1px solid #fcac08;
+}
+
+.team .game table {
+    width: 200px;
+    height: 80px;
+}

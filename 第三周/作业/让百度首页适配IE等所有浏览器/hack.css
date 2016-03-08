@@ -1,0 +1,9 @@
+/*ie6*/
+#submit{
+	_padding-top:6px;
+	
+}
+/*ie去除图片边框*/
+.right a img{
+	border: 0;
+}

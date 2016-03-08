@@ -1,0 +1,89 @@
+body{
+	background-image: url(img/beijing.gif);
+	margin:0 auto;
+}
+
+p{
+	font-size: 13px;
+	color:#0000ff;
+}
+span{
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: 2px;
+	padding-left: 15px;
+	color: #003399;
+	display: block;
+}
+font{
+	font-size: 13px;
+	line-height: 10px;
+
+}
+a{
+	text-decoration: none;
+	color: red;
+	font-size: 13px;
+}
+ul{
+	float: right;
+	margin-right: 10px;
+    margin-top: 80px;
+
+}
+li{
+	float: left;
+	margin-left: 15px;
+	color: red;
+	list-style-type: none;
+}
+img{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+
+caption{
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+label{
+	float: right;
+}
+
+.con{
+	width: 800px;
+	padding-bottom: 60px;
+	margin: 20px auto;
+	border-radius: 20px;
+	background-color: white;
+}
+.con ul li a:hover{
+	color: blue;
+}
+
+.title{
+	font-size: 13px;
+}
+.table1{
+	border-collapse:collapse;
+	margin: 0 50px;
+	width:700px;
+	border: #B3A8A8;
+}
+.table2{
+	line-height: 25px;
+	padding: 5px 10px;
+}
+
+.submit{
+	width: 200px;
+	height: 30px;
+	position: relative;
+	left: 50%;
+	margin-left: -100px;
+}

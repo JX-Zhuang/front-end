@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    .page-wrap,
+    .item-wrap,
+    .sub-item,
+    .img-item {
+        position: relative;
+    }
+    
+    .page-wrap {
+        width: 560px;
+        height: 260px;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+    
+    .item-wrap {
+        width: 4480px;
+        left: -560px;
+        overflow: hidden;
+    }
+    
+    .item-wrap img {
+        width: 560px;
+        height: 260px;
+        float: left;
+    }
+    
+    .img-item {
+        width: 100%;
+    }
+    
+    .left-btn,
+    .right-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 100px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    .left-btn {
+        left: 0;
+        background: url(img/carousel/banner-left.png);
+        display: none;
+    }
+    
+    .right-btn {
+        right: 0;
+        background: url(img/carousel/banner-right.png);
+        display: none;
+    }
+    
+    .left-btn:hover,
+    .right-btn:hover {
+        background-position: 0 60px;
+    }
+    
+    .page-wrap:hover .left-btn,
+    .page-wrap:hover .right-btn {
+        display: block;
+    }
+    
+    .bottom-btn {
+        width: 312px;
+        position: absolute;
+        bottom: 5px;
+        left: 124px;
+    }
+    
+    .bottom-btn span {
+        cursor: pointer;
+        display: inline-block;
+        width: 32px;
+        height: 20px;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: url(img/carousel/bottom-btn1.jpg) no-repeat;
+    }
+    
+    .bottom-btn .on {
+        background: url(img/carousel/bottom-btn.jpg) no-repeat;
+    }
+    </style>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<!--
+           - - - - -> page-wrap可视区域
+    - - - - '- - '- - -
+   | img img' img' img img|->item-wrap外层轮播的盒子 
+   - - - - -' - -' - - -
+            '- - - 
+每一个img有一个div sub-item
+-->
+
+<body>
+    <div class="page-wrap">
+        <!--左按钮-->
+        <div class="left-btn"></div>
+        <!--右按钮-->
+        <div class="right-btn"></div>
+        <!--最外层-->
+        <div class="item-wrap">
+            <img src="img/carousel/6.jpg" class="img-item">
+            <img src="img/carousel/1.jpg" class="img-item">
+            <img src="img/carousel/2.jpg" class="img-item">
+            <img src="img/carousel/3.jpg" class="img-item">
+            <img src="img/carousel/4.jpg" class="img-item">
+            <img src="img/carousel/5.jpg" class="img-item">
+            <img src="img/carousel/6.jpg" class="img-item">
+            <img src="img/carousel/1.jpg" class="img-item">
+
+        </div>
+        <div class="bottom-btn">
+            <span index="0" class="on"></span>
+            <span index="1"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+            <span index="5"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

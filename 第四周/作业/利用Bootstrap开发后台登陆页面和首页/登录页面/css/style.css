@@ -1,0 +1,57 @@
+body {
+    background: #ffc000;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+
+/*login-->backgroundimg*/
+
+.container img {
+    display: block;
+    margin-top: 30px;
+    margin-left: 33%;
+}
+
+
+/*login-->form*/
+
+.container .login {
+    margin: -600px 0 0 30px;
+    position: relative;
+    left: 33%;
+    width: 270px;
+}
+
+
+/*login-->username password*/
+
+#username,
+#password {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 40px;
+}
+
+#username {
+    background: url(../img/login_user.png) #d3d3d3 left no-repeat;
+}
+
+#password {
+    background: url(../img/login_pas.png) #d3d3d3 left no-repeat;
+}
+
+
+/*login-->button*/
+
+#login_button {
+    font-size: 20px;
+    line-height: 20px;
+    background: #4891fb;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #4182e1;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>表单</title>
+</head>
+<body>
+<form>
+<table border="1" width="500px" >
+	<tr>
+		<td width="200px">
+			<label for="textfild">请输入姓名：</label>
+		</td>
+		<td width="300px">
+			<input type="text" name="textfild" id="username">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="select">请选择性别：</label>
+		</td>
+		<td>
+			<select name="select" id="select">
+				<option value="male">男</option>
+				<option value="female">女</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			你喜欢的运动
+		</td>
+		<td>
+			<label>
+				<input type="checkbox" name="love" id="basketball">篮球
+			</label>
+			<br >
+			<label>
+				<input type="checkbox" name="love" id="football">足球
+			</label>
+		</td>
+	</tr>
+	<tr>
+		<td>你最喜欢吃的水果</td>
+		<td>
+			<label>
+				<input type="radio" name="shuiguo" id="apple">苹果
+			</label>
+			<label>
+				<input type="radio" name="shuiguo" id="banana">香蕉
+			</label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<label for="textarea">
+		请输入个人简介
+		</label>
+		</td>
+		<td>
+		<textarea cols="30" rows="10" name="textarea" id="textarea">
+			
+		</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="fileFiled">
+				请上传个人头像
+			</label>
+		</td>
+		<td>
+			<input type="file" name="fileField" id="fileField">
+		</td>
+	</tr>
+	<tr>
+		<td>分组</td>
+		<td>
+			<fieldset>
+				<legend>
+					篮球
+				</legend>
+					<ul>
+						<li>MJ</li>
+						<li>KG</li>
+						<li>CP3</li>
+					</ul>
+				
+			</fieldset>
+			<fieldset>
+				<legend>足球</legend>
+				<ul>
+					<li>贝克汉姆</li>
+					<li>卡西利亚斯</li>
+				</ul>
+			</fieldset>
+		</td>
+	</tr>
+	<tr>
+		<td>隐藏的标记</td>
+		<td>
+			<input type="hidden" value="hidden">
+		</td>
+	</tr>
+	<tr>
+		<td>图片按钮</td>
+		<td>
+			<input type="image" name="imgbutton" id="imgbutton" src="http://www.xuexinjinfu.com/img/logo.png">
+		</td>
+	</tr>
+	<tr>
+		<td><button>按钮</button></td>
+		<td>
+			<input type="submit" value="提交">
+			<input type="reset" value="重置">
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+	
+
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f3f9;
+    min-width: 960px;
+}
+
+
+/*头部*/
+
+.header img {
+    width: 100%;
+}
+
+.header .top_right {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+.header p {
+    color: #ffffff;
+    float: right;
+    font-size: 50px;
+    line-height: 80px;
+    font-family: "微软雅黑";
+}
+
+.header .ch {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+
+/*边框*/
+
+.side {
+    background: #e7edf5;
+    height: 20px;
+    box-shadow: 1px 1px 5px #868282;
+    -webkit-box-shadow: 1px 1px 5px #868282;
+    -mz-box-shadow: 1px 1px 5px #868282;
+    -o-box-shadow: 1px 1px 5px #868282;
+    -ms-box-shadow: 1px 1px 5px #868282;
+}
+
+
+/*主要部分*/
+
+.main {
+    margin-top: 50px;
+    border: 1px solid #f0f3f9;
+}
+
+
+/*文字*/
+
+.main span {
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "黑体";
+    line-height: 90px;
+}
+
+
+/*图片*/
+
+.main img {
+    display: inline-block;
+    width: 23%;
+}
+
+
+/*左边*/
+
+.main .left {
+    margin-left: 4%;
+    margin-right: 10%;
+}
+
+
+/*中间*/
+
+.main .center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*右边*/
+
+.main .right {
+    margin-left: 10%;
+    margin-right: 4%;
+}
