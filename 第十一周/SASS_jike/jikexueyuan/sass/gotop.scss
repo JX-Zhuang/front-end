@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+
+/*返回顶部*/
+
+.gotop {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    width: 34px;
+    margin-left: 510px;
+    z-index: 5;
+    span {
+        display: block;
+        height: 34px;
+        background: url(../img/gotop.jpg) no-repeat;
+        background-size: 34px;
+        cursor: pointer;
+        &:first-child {
+            display: block;
+            background-position: 0 0;
+            &:hover {
+                background-image: url(../img/gotop2.jpg);
+            }
+        }
+        &:nth-child(2) {
+            background-position: 0 -34px;
+            img {
+                position: absolute;
+                z-index: 5;
+                left: -126px;
+                bottom: 15px;
+                display: none;
+                width: 126px;
+                height: 159px;
+                &:hover {
+                    display: block;
+                }
+            }
+            &:hover {
+                background-image: url(../img/gotop2.jpg);
+            }
+            &:hover img {
+                display: block;
+            }
+        }
+        &:nth-child(3) {
+            background-position: 0 -68px;
+            border-bottom: 1px solid $color-border;
+            &:hover {
+                background-image: url(../img/gotop2.jpg);
+            }
+        }
+        &:last-child {
+            background: url(../img/gotop_kefu.png) #f7f7f7 no-repeat center;
+            div {
+                position: absolute;
+                padding: 5px;
+                display: none;
+                background: #f7f7f7;
+                color: #333;
+                @include font-size(12px);
+                text-align: center;
+                width: 180px;
+                left: -200px;
+                &:hover {
+                    display: block;
+                }
+                i {
+                    position: absolute;
+                    right: -10px;
+                    top: 12px;
+                    border-top: 8px solid #fff;
+                    border-left: 10px solid #f7f7f7;
+                    border-bottom: 8px solid #fff;
+                }
+            }
+            &:hover div {
+                display: block;
+            }
+        }
+    }
+}

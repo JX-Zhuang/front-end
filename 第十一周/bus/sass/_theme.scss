@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import "compass/css3";
+$font-family:"微软雅黑";
+$color-gray:#f6f6f6;
+$color-red:#cd2f00;
+$color-white:#fff;
+$color-green:#006401;
+body {
+    font-family: $font-family;
+}
+
+.container-background {
+    background: $color-gray;
+}
+
+.container_header-left_road {
+    background: $color-red;
+    color: $color-white;
+    @include font-size(30px);
+    font-weight:bold;
+}
+
+.container_middle-background {
+    background: $color-green;
+    color: $color-white;
+}
+
+.route {
+    @include font-size(20px);
+    color: $color-green;
+    font-weight:bold;
+}
+
+.nowStand {
+    @include font-size(20px);
+    color: $color-red;
+}
+
+.arrows-theme {
+    background: $color-red;
+    &:after {
+        border-top: 15px solid $color-gray;
+        border-bottom: 7px solid $color-red;
+        border-left: 48px solid $color-red;
+        border-right: 25px solid $color-gray;
+    }
+}

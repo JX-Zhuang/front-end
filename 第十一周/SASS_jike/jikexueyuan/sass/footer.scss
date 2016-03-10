@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+/*底部*/
+
+.footer {
+    height: 315px;
+    border-top: 1px solid $color-border;
+    margin-top: 56px;
+    background: #fafafa;
+    /*底部上部分*/
+    .footTop {
+        height: 258px;
+        width: 1000px;
+        margin: 0 auto;
+        .footTInner {
+            width: 153px;
+            border-left: 1px solid $color-border;
+            margin-top: 25px;
+            float: left;
+            padding-left: 30px;
+            line-height: 24px;
+            a {
+                text-indent: 5px;
+                color: #808080;
+                @include font-size(14px);
+                margin-left: 10px;
+                &::hover {
+                    color: $color-green;
+                }
+            }
+            li {
+                color: #808080;
+                a {
+                    @include font-size(12px);
+                }
+            }
+        }
+        /*上部分右边的内容*/
+        .footTInnerR {
+            border-left: 1px solid $color-border;
+            width: 233px;
+            float: right;
+            padding-top: 20px;
+            padding-left: 30px;
+            strong {
+                margin: 0 auto;
+                color: $color-green;
+                text-align: center;
+            }
+            .footTInnerR1 {
+                margin-top: 20px;
+                img {
+                    width: 21px;
+                    margin-right: 15px;
+                    float: left;
+                }
+                strong {
+                    display: block;
+                    text-align: left;
+                    @include font-size(20px);
+                    color: #666;
+                    line-height: 22px;
+                }
+                span {
+                    @include font-size(14px);
+                    color: #808080;
+                }
+                &:hover.footTInnerR1 span,
+                &:hover.footTInnerR1 strong {
+                    color: $color-green;
+                }
+            }
+            .sina {
+                @extend .sina_post_weixin;
+                background-position: -19px 6px;
+                &:hover {
+                    background-position: -19px -34px;
+                }
+            }
+            .post {
+                @extend .sina_post_weixin;
+                background-position: -139px 6px;
+                &:hover {
+                    background-position: -139px -34px;
+                }
+            }
+            .weixin {
+                @extend .sina_post_weixin;
+                background-position: -19px -76px;
+                &:hover {
+                    background-position: -19px -116px;
+                }
+            }
+            .kefu {
+                height: 40px;
+                margin-left: 2px;
+                margin-top: 10px;
+                p {
+                    color: #666;
+                    @include font-size(14px);
+                }
+                span {
+                    color: #808080;
+                    @include font-size(12px);
+                }
+                &:hover.kefu p,
+                &:hover.kefu span {
+                    color: $color-green;
+                }
+                .kefuImg {
+                    background: url(../img/kefu.png) no-repeat;
+                    background-size: 80px 40px;
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    /*底部下部分*/
+    .footBottom {
+        border-top: 1px solid $color-border;
+        background: #fff;
+        line-height: 56px;
+        p {
+            @include font-size(12px);
+            color: #808080;
+            text-align: center;
+            a {
+                @include font-size(12px);
+                color: #808080;
+                text-align: center;
+            }
+        }
+    }
+}

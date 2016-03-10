@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+/*战略合作企业,合作院校,媒体*/
+
+#company,
+#school,
+#media {
+    @extend .company_school_media;
+}
+
+#school {
+    height: 108px;
+    a {
+        img {
+            width: 110px;
+            border: 0;
+        }
+    }
+}

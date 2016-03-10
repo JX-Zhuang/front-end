@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+/*中间内容*/
+
+#middle {
+    height: 548px;
+    /*标题*/
+    #midTitle {
+        height: 69px;
+        border-bottom: 1px solid $color-border;
+        a {
+            display: inline-block;
+            height: 40px;
+            float: left;
+            width: 166px;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 28px;
+        }
+        .midTitle-show {
+            background: url(../img/midTitle.png) center bottom no-repeat;
+            background-size: 10px 5px;
+            border-bottom: 2px solid $color-green;
+        }
+    }
+    .midMain {
+        height: 478px;
+        display: none;
+        .midBox {
+            float: left;
+            @include w_h(233px, 215px);
+            margin-top: 20px;
+            margin-right: 20px;
+            border: 0;
+            .midBox-top {
+                height: 130px;
+                border: 1px solid $color-border;
+                img {
+                    @include w_h(100%, 130px);
+                }
+            }
+            .midBox-middle {
+                position: relative;
+                z-index: 1;
+                padding: 15px 10px 0;
+                overflow: hidden;
+                height: 68px;
+                border: 1px solid $color-border;
+                border-top: 0;
+                background: #fff;
+                @include transition(height .3s ease);
+                h2 {
+                    a {
+                        @include font-size(14px);
+                        color: #333;
+                        font-weight: normal;
+                    }
+                }
+                .midBox-middle-bottom {
+                    position: relative;
+                    @include font-size(13px);
+                    line-height: 26px;
+                    background: #fff;
+                    p {
+                        color: #939393;
+                    }
+                    span {
+                        @include font-size(13px);
+                    }
+                }
+                .midBox-middle-text {
+                    height: 0;
+                    color: #939393;
+                    @include font-size(13px);
+                    line-height: 26px;
+                    margin-top: 20px;
+                    @include transition(height .3s ease);
+                }
+            }
+            &:hover .midBox-middle {
+                height: 175px;
+            }
+            &:hover .midBox-middle-text {
+                height: 65px;
+            }
+        }
+        .midBoxR {
+            float: right;
+            margin-right: 0;
+        }
+    }
+    .midMain-show {
+        display: block;
+    }
+}

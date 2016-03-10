@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>极客学院</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/sea.js"></script>
+    <script type="text/javascript">
+    //sea.js简单配置
+    seajs.config({
+        base: './js/',
+        alias: {
+            'jquery': 'jquery.min.js'
+        }
+    });
+    seajs.use('main');
+    </script>
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <div id="headTop">
+            <div class="w-1000 hTInner">
+                <a href="#" class="logo" title="极客学院"><img src="img/logo.png"></a>
+                <div class="search">
+                    <form method="get" target="_blank">
+                        <input type="text" id="text" placeholder="搜索课程、问答或Wiki">
+                        <input type="submit" id="submit" value="  " class="submit-blur">
+                    </form>
+                    <div class="hot-words">
+                        <a href="#">Android</a>
+                        <a href="#">ios</a>
+                        <a href="#">HTML5</a>
+                    </div>
+                </div>
+                <div class="login">
+                    <a href="#"><img src="img/login.gif"></a> <span>|</span> <a href="#">QQ登录</a> <span>|</span> <a href="#">登录</a> <span>|</span> <a href="#" class="loginR">注册</a></div>
+            </div>
+        </div>
+        <div id="headBottom">
+            <div class="w-1000 hBInner">
+                <div class="headTab"><a href="#" class="headTab1">首页</a> <a href="#">职业课程</a> <a href="#">就业学习</a> <a href="#">极客社区</a> <a href="#">极客+</a></div>
+                <div class="vipBox">
+                    <a href="#"><img src="img/vip.png">vip会员</a>
+                    <a href="#"><img src="img/star.png">求课程</a>
+                    <a href="#"><img src="img/app.png">客户端</a>
+                </div>
+                <!--隐藏区域-->
+                <div id="headTabHide">
+                    <div class="hTabHInner"><a href="#">课程库</a> <a href="#">知识体系图</a> <a href="#">职业路径图</a> <a href="#">系列课程</a></div>
+                    <div class="hTabHInner"><a href="#">Web前端开发</a> <a href="#">Android开发</a> <a href="#">JavaWeb开发</a></div>
+                    <div class="hTabHInner"><a href="#">Wiki</a> <a href="#">技术问答</a> <a href="#">社群</a> <a href="#">资源分享</a></div>
+                    <div class="hTabHInner"><a href="#">高校合作</a> <a href="#">极客人才联盟</a> <a href="#">布道师招募</a> <a href="#">兼职助教招募</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主要内容-->
+    <div class="w-1000">
+        <!--最主要的-->
+        <div id="important">
+            <div id="impLeft"><a href="">移动开发<span></span></a> <a href="">前端开发<span></span></a> <a href="">后端开发<span></span></a> <a href="">基础知识<span></span></a> <a href="">云计算&大数据<span></span></a> <a href="">智能硬件&物联网<span></span></a> <a href="">数据库<span></span></a> <a href="">认证考试<span></span></a> <a href="">企业 IT<span></span></a> <a href="">设计&产品&测试<span></span></a></div>
+            <!--左侧导航-->
+            <div class="impLeft-inner">
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">移动开发</a></h2><a href="#">IOS</a> <span>|</span> <a href="#">Android</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">前端基础</a></h2><a href="#">HTML</a> <span>|</span> <a href="#">CSS</a> <span>|</span> <a href="#">JavaScript</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">Python</a></h2><a href="#">Python 基础</a> <span>|</span> <a href="#">web2py</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">基础语言</a></h2><a href="#">C</a> <span>|</span> <a href="#">C++</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">云计算</a></h2><a href="#">openStack</a> <span>|</span> <a href="#">Docker</a>
+                    <h2><a href="#">大数据</a></h2><a href="#">Hadoop</a> <span>|</span> <a href="#">Storm</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">硬件架构</a></h2><a href="#">C51</a> <span>|</span> <a href="#">ARM</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">SQL</a></h2><a href="#">MySQL</a> <span>|</span> <a href="#">SQL</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">计算机等级考试</a></h2><a href="#">一级</a> <span>|</span> <a href="#">二级C</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">运维管理</a></h2><a href="#">Shell</a> <span>|</span> <a href="#">自动化运维</a></div>
+                <div class="impLeft-inner-text">
+                    <h2><a href="#">设计基础</a></h2><a href="#">Photoshop</a> <span>|</span> <a href="#">Flash</a></div>
+            </div>
+            <!--轮播-->
+            <div id="impMiddle">
+                <div class="impMTop">
+                    <div class="page-wrap">
+                        <!--左按钮-->
+                        <div class="left-btn"></div>
+                        <!--右按钮-->
+                        <div class="right-btn"></div>
+                        <!--最外层-->
+                        <div class="item-wrap"><img src="img/6.jpg" class="img-item"> <img src="img/1.jpg" class="img-item"> <img src="img/2.jpg" class="img-item"> <img src="img/3.jpg" class="img-item"> <img src="img/4.jpg" class="img-item"> <img src="img/5.jpg" class="img-item"> <img src="img/6.jpg" class="img-item"> <img src="img/1.jpg" class="img-item"></div>
+                        <div class="bottom-btn"><span index="0" class="on"></span> <span index="1"></span> <span index="2"></span> <span index="3"></span> <span index="4"></span> <span index="5"></span></div>
+                    </div>
+                </div>
+                <div class="impMBot">
+                    <!--左按钮-->
+                    <div class="left-btn"></div>
+                    <!--右按钮-->
+                    <div class="right-btn"></div>
+                    <div class="impMBot-inner">
+                        <a href="#" class="impMBot-box"><img src="img/jiuye.jpg">
+                            <h2>极客学院就业班</h2><span>0基础 | 4个月 | 100%保就业</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/android.png">
+                            <h2>Android开发工程师</h2><span>挑战月薪两万的工作机会</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/html.png">
+                            <h2>HTML5/Web前端工程师</h2><span>BAT大牛亲自授课</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/java.jpg">
+                            <h2>JavaWeb开发工程师</h2><span>Java人才4个月进阶</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/jiuye.jpg">
+                            <h2>极客学院就业班</h2><span>0基础 | 4个月 | 100%保就业</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/android.png">
+                            <h2>Android开发工程师</h2><span>挑战月薪两万的工作机会</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/html.png">
+                            <h2>HTML5/Web前端工程师</h2><span>BAT大牛亲自授课</span></a>
+                        <a href="#" class="impMBot-box"><img src="img/java.jpg">
+                            <h2>JavaWeb开发工程师</h2><span>Java人才4个月进阶</span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="impRight">
+                <div class="impRTop">
+                    <p>快讯</p><a href="#">极客学院极客学院极客学院</a> <a href="#">极客学院极客学院极客学院</a> <a href="#">极客学院极客学院极客学院</a> <a href="#">极客学院极客学院极客学院</a></div>
+                <div class="impRMid">
+                    <div class="default"><img src="img/default.gif"></div>
+                    <p>Hi 你好</p><span>欢迎来到极客学院</span>
+                    <button class="loginBtn">登录</button>
+                    <button class="regiBtn">注册</button>
+                </div>
+                <div class="impRBot">
+                    <div class="impRBotI"><a href="#"><span class="impRBotIcon impRBotIcon1"></span> 问答</a> <a href="#"><span class="impRBotIcon impRBotIcon2"></span> wiki</a> <a href="#"><span class="impRBotIcon impRBotIcon3"></span> 课程</a> <a href="#" class="impRBotRight"><span class="impRBotIcon impRBotIcon4"></span> 社群</a></div>
+                    <div class="impRBotI"><a href="#"><span class="impRBotIcon impRBotIcon5"></span> 下载</a> <a href="#"><span class="impRBotIcon impRBotIcon6"></span> 知识</a> <a href="#"><span class="impRBotIcon impRBotIcon7"></span> 职业</a> <a href="#" class="impRBotRight"><span class="impRBotIcon impRBotIcon8"></span> VIP</a></div>
+                </div>
+            </div>
+        </div>
+        <!--中间内容-->
+        <div id="middle">
+            <div id="midTitle"><a href="#" class="midTitle-show">热门推荐</a> <a href="#">最新课程</a> <a href="#">免费课程</a> <a href="#">项目实战</a> <a href="#">全球首发</a> <a href="#">企业合作</a></div>
+            <div class="midMain midMain-show">
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(1).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(2).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(3).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(4).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(5).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(6).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(7).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid(8).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">热门推荐</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="midMain">
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(1).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(2).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(3).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(4).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(5).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(6).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(7).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid2(8).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">最新课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="midMain">
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(1).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(2).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(3).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(4).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(5).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(6).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(7).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid3(8).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">免费课程</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="midMain">
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(1).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(2).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(3).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(4).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(5).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(6).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(7).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid4(8).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">项目实战</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="midMain">
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(1).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(2).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(3).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(4).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(5).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(6).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(7).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid5(8).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">全球首发</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="midMain">
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(1).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(2).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(3).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(4).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(5).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(6).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(7).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midBox midBoxR">
+                    <div class="midBox-top">
+                        <a href=""><img src="img/mid6(8).jpg"></a>
+                    </div>
+                    <div class="midBox-middle">
+                        <h2><a href="#">合作企业</a></h2>
+                        <p class="midBox-middle-text">极客学院极客学院极客学院极客学院极客学院极客学院极客学院</p>
+                        <div class="midBox-middle-bottom">
+                            <p>5分钟</p>
+                            <p>初级</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--职业路径图-->
+        <div class="bar"><span>职业路径图</span> <a href="#" class="more">更多>></a></div>
+        <div id="profession">
+            <div class="proBox">
+                <a href="#" class="proBoxL"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#" class="proBoxL proBoxB"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#" class="proBoxB"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#" class="proBoxB"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#" class="proBoxB"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+            <div class="proBox">
+                <a href="#" class="proBoxB"><img src="img/web.png">
+                    <p>WEB大前端工程师</p><span>月薪15k-30k</span> <span>web开发的未来趋势</span>
+                    <div class="proBoxBtn">立即学习</div>
+                </a>
+            </div>
+        </div>
+        <!--知识体系图-->
+        <div class="bar"><span>知识体系图</span> <a href="#" class="more">更多>></a></div>
+        <div id="knowledge">
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/html.png">
+                    <p>HTML5开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/swift.png">
+                    <p>Swift开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/php.png">
+                    <p>PHP语言</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/c.png">
+                    <p>C语言</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/Cocos2d-x.png">
+                    <p>Cocos2d-x游戏</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/54f56c854161d.png">
+                    <p>Unity 3D</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/5457d0aee9018.png">
+                    <p>Python</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/54dab77e7b38a.png">
+                    <p>Bootstrap</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/c.png">
+                    <p>C语言</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/Cocos2d-x.png">
+                    <p>Cocos2d-x游戏</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/ios.png">
+                    <p>IOS开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/556543603b3e8.png">
+                    <p>Android开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/html.png">
+                    <p>HTML5开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/swift.png">
+                    <p>Swift开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/php.png">
+                    <p>PHP语言</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/Cocos2d-x.png">
+                    <p>Cocos2d-x游戏</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/c.png">
+                    <p>C语言</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/54f56c854161d.png">
+                    <p>Unity 3D</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/5457d0aee9018.png">
+                    <p>Python</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/54dab77e7b38a.png">
+                    <p>Bootstrap</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/c.png">
+                    <p>C语言</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/Cocos2d-x.png">
+                    <p>Cocos2d-x游戏</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/ios.png">
+                    <p>IOS开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+            <div class="knowBox">
+                <a href="#" class="knowBoxP1"><img src="img/556543603b3e8.png">
+                    <p>Android开发</p><span>116门课程</span></a>
+                <div href="#" class="knowBoxP2"><span>741088人已学习</span> <a href="#" class="knowBoxP2-btn">立即学习</a></div>
+            </div>
+        </div>
+        <!--精品系列课程-->
+        <div class="bar"><span>精品系列课程</span> <a href="#" class="more">更多>></a></div>
+        <div id="competitive">
+            <div class="competBox">
+                <div class="competBoxHide">
+                    <a href="#"><img src="img/php.jpeg"> <span>jikexueyuan</span>
+                        <p>通过本课程的学习，理解ThinkPHP 3.2的核心原理、设计思想、掌握框架</p>
+                    </a> <a href="#">马上学习</a></div>
+                <div class="competBoxT"><span>ThinkPHP 项目开发实战</span> <img src="img/php.jpg"></div>
+                <div class="competBoxB"><span>8门 54774人学习</span> <a href="#">收藏</a></div>
+            </div>
+            <div class="competBox">
+                <div class="competBoxHide">
+                    <a href="#"><img src="img/php.jpeg"> <span>jikexueyuan</span>
+                        <p>通过本课程的学习，理解ThinkPHP 3.2的核心原理、设计思想、掌握框架</p>
+                    </a> <a href="#">马上学习</a></div>
+                <div class="competBoxT"><span>ThinkPHP 项目开发实战</span> <img src="img/php.jpg"></div>
+                <div class="competBoxB"><span>8门 54774人学习</span> <a href="#">收藏</a></div>
+            </div>
+            <div class="competBox">
+                <div class="competBoxHide">
+                    <a href="#"><img src="img/php.jpeg"> <span>jikexueyuan</span>
+                        <p>通过本课程的学习，理解ThinkPHP 3.2的核心原理、设计思想、掌握框架</p>
+                    </a> <a href="#">马上学习</a></div>
+                <div class="competBoxT"><span>ThinkPHP 项目开发实战</span> <img src="img/php.jpg"></div>
+                <div class="competBoxB"><span>8门 54774人学习</span> <a href="#">收藏</a></div>
+            </div>
+            <div class="competBox competBoxR">
+                <div class="competBoxHide">
+                    <a href="#"><img src="img/php.jpeg"> <span>jikexueyuan</span>
+                        <p>通过本课程的学习，理解ThinkPHP 3.2的核心原理、设计思想、掌握框架</p>
+                    </a> <a href="#">马上学习</a></div>
+                <div class="competBoxT"><span>ThinkPHP 项目开发实战</span> <img src="img/php.jpg"></div>
+                <div class="competBoxB"><span>8门 54774人学习</span> <a href="#">收藏</a></div>
+            </div>
+        </div>
+        <!--Wiki-->
+        <div class="bar"><span>Wiki</span> <a href="#" class="more">更多>></a></div>
+        <div id="wiki">
+            <div class="wikiBox">
+                <div class="wikiBox-inner wikiBox-left">
+                    <p>推荐</p>
+                    <div class="wikiBox-middle">
+                        <a href="#">
+                            <div class="img-box"><span></span> <img src="img/book1.jpg"></div>
+                            <p>RESTful Web 服务器教程</p><span>50页/11章</span></a>
+                        <a href="#">
+                            <div class="img-box"><span></span> <img src="img/book2.jpeg"></div>
+                            <p>七天学会 Node.js</p><span>87页/7章</span></a>
+                    </div>
+                    <div class="wikiBox-bottom">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;快速开发ios应用程序</p><span>143页/4章</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;UNIX入门指南</p><span>130页/3章</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;Django搭建博客教程</p><span>68页/13章</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wikiBox">
+                <div class="wikiBox-inner">
+                    <p>推荐</p>
+                    <div class="wikiBox-middle">
+                        <a href="#">
+                            <div class="img-box"><span></span> <img src="img/book3.jpg"></div>
+                            <p>RESTful Web 服务器教程</p><span>50页/11章</span></a>
+                        <a href="#">
+                            <div class="img-box"><span></span> <img src="img/book4.jpeg"></div>
+                            <p>七天学会 Node.js</p><span>87页/7章</span></a>
+                    </div>
+                    <div class="wikiBox-bottom">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;快速开发ios应用程序</p><span>143页/4章</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;UNIX入门指南</p><span>130页/3章</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;Django搭建博客教程</p><span>68页/13章</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wikiBox">
+                <div class="wikiBox-inner">
+                    <p>推荐</p>
+                    <div class="wikiBox-middle">
+                        <a href="#">
+                            <div class="img-box"><span></span> <img src="img/book5.jpg"></div>
+                            <p>RESTful Web 服务器教程</p><span>50页/11章</span></a>
+                        <a href="#">
+                            <div class="img-box"><span></span> <img src="img/book5.jpeg"></div>
+                            <p>七天学会 Node.js</p><span>87页/7章</span></a>
+                    </div>
+                    <div class="wikiBox-bottom">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;快速开发ios应用程序</p><span>143页/4章</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;UNIX入门指南</p><span>130页/3章</span></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>&middot;Django搭建博客教程</p><span>68页/13章</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--战略合作企业-->
+        <div class="bar"><span>战略合作企业</span> <a href="#" class="more">更多>></a></div>
+        <div id="company">
+            <!--左按键-->
+            <div class="left-btn"></div>
+            <!--右按钮-->
+            <div class="right-btn"></div>
+            <div>
+                <a href="#"><img src="img/company(8).jpg"></a>
+                <a href="#"><img src="img/company(9).jpg"></a>
+                <a href="#"><img src="img/company(10).jpg"></a>
+                <a href="#"><img src="img/company(1).jpg"></a>
+                <a href="#"><img src="img/company(2).jpg"></a>
+                <a href="#"><img src="img/company(3).jpg"></a>
+                <a href="#"><img src="img/company(4).jpg"></a>
+                <a href="#"><img src="img/company(5).jpg"></a>
+                <a href="#"><img src="img/company(6).jpg"></a>
+                <a href="#"><img src="img/company(7).jpg"></a>
+                <a href="#"><img src="img/company(8).jpg"></a>
+                <a href="#"><img src="img/company(9).jpg"></a>
+                <a href="#"><img src="img/company(10).jpg"></a>
+                <a href="#"><img src="img/company(1).jpg"></a>
+                <a href="#"><img src="img/company(2).jpg"></a>
+                <a href="#"><img src="img/company(3).jpg"></a>
+                <a href="#"><img src="img/company(4).jpg"></a>
+            </div>
+        </div>
+        <!--合作院校-->
+        <div class="bar"><span>合作院校</span> <a href="#" class="more">更多>></a></div>
+        <div id="school">
+            <!--左按钮-->
+            <div class="left-btn"></div>
+            <!--右按钮-->
+            <div class="right-btn"></div>
+            <div>
+                <a href="#"><img src="img/school(8).png"></a>
+                <a href="#"><img src="img/school(9).png"></a>
+                <a href="#"><img src="img/school(10).png"></a>
+                <a href="#"><img src="img/school(1).png"></a>
+                <a href="#"><img src="img/school(2).png"></a>
+                <a href="#"><img src="img/school(3).png"></a>
+                <a href="#"><img src="img/school(4).png"></a>
+                <a href="#"><img src="img/school(5).png"></a>
+                <a href="#"><img src="img/school(6).png"></a>
+                <a href="#"><img src="img/school(7).png"></a>
+                <a href="#"><img src="img/school(8).png"></a>
+                <a href="#"><img src="img/school(9).png"></a>
+                <a href="#"><img src="img/school(10).png"></a>
+                <a href="#"><img src="img/school(1).png"></a>
+                <a href="#"><img src="img/school(2).png"></a>
+                <a href="#"><img src="img/school(3).png"></a>
+                <a href="#"><img src="img/school(4).png"></a>
+            </div>
+        </div>
+        <!--媒体报道-->
+        <div class="bar"><span>媒体报道</span></div>
+        <div id="media">
+            <!--左按键-->
+            <div class="left-btn"></div>
+            <!--右按钮-->
+            <div class="right-btn"></div>
+            <div>
+                <a href="#"><img src="img/company(8).jpg"></a>
+                <a href="#"><img src="img/company(9).jpg"></a>
+                <a href="#"><img src="img/company(10).jpg"></a>
+                <a href="#"><img src="img/company(1).jpg"></a>
+                <a href="#"><img src="img/company(2).jpg"></a>
+                <a href="#"><img src="img/company(3).jpg"></a>
+                <a href="#"><img src="img/company(4).jpg"></a>
+                <a href="#"><img src="img/company(5).jpg"></a>
+                <a href="#"><img src="img/company(6).jpg"></a>
+                <a href="#"><img src="img/company(7).jpg"></a>
+                <a href="#"><img src="img/company(8).jpg"></a>
+                <a href="#"><img src="img/company(9).jpg"></a>
+                <a href="#"><img src="img/company(10).jpg"></a>
+                <a href="#"><img src="img/company(1).jpg"></a>
+                <a href="#"><img src="img/company(2).jpg"></a>
+                <a href="#"><img src="img/company(3).jpg"></a>
+                <a href="#"><img src="img/company(4).jpg"></a>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <div class="footTop">
+            <div class="footTInner"><a href="#">极客学院</a>
+                <ul>
+                    <li>&middot;<a href="#">职业课程库</a></li>
+                    <li>&middot;<a href="#">知识体系图</a></li>
+                    <li>&middot;<a href="#">职业路径图</a></li>
+                    <li>&middot;<a href="#">企业课程</a></li>
+                    <li>&middot;<a href="#">资源下载</a></li>
+                    <li>&middot;<a href="#">课程标签</a></li>
+                </ul>
+            </div>
+            <div class="footTInner"><a href="#">网站服务</a>
+                <ul>
+                    <li>&middot;<a href="#">课程需求</a></li>
+                    <li>&middot;<a href="#">免费体验VIP</a></li>
+                    <li>&middot;<a href="#">黑板报</a></li>
+                    <li>&middot;<a href="#">网站地图</a></li>
+                </ul>
+            </div>
+            <div class="footTInner"><a href="#">帮助中心</a>
+                <ul>
+                    <li>&middot;<a href="#">技术问答</a></li>
+                    <li>&middot;<a href="#">VIP权益</a></li>
+                    <li>&middot;<a href="#">常见问题</a></li>
+                    <li>&middot;<a href="#">服务条款</a></li>
+                    <li>&middot;<a href="#">版权声明</a></li>
+                    <li>&middot;<a href="#">免费声明</a></li>
+                </ul>
+            </div>
+            <div class="footTInner"><a href="#">交流合作</a>
+                <ul>
+                    <li>&middot;<a href="#">关于我们</a></li>
+                    <li>&middot;<a href="#">联系我们</a></li>
+                    <li>&middot;<a href="#">社会招聘</a></li>
+                    <li>&middot;<a href="#">布道师招募</a></li>
+                    <li>&middot;<a href="#">合作咨询</a></li>
+                    <li>&middot;<a href="#">友情链接</a></li>
+                    <li>&middot;<a href="#">极客助教招募</a></li>
+                </ul>
+            </div>
+            <div class="footTInnerR"><strong>极客学院，编程是一种信仰！</strong>
+                <a href="#">
+                    <div class="footTInnerR1"><img src="img/iphone.png"> <strong>手机客户端</strong> <span>离线缓存 随时学习 ></span></div>
+                </a>
+                <a href="#" class="sina"></a>
+                <a href="#" class="post"></a>
+                <a href="#" class="weixin"></a>
+                <div class="kefu">
+                    <a href="#">
+                        <div class="kefuImg"></div>
+                        <p>联系我们</p><span>工作日9：00-21：00在线</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footBottom">
+            <p>Copyright &copy; 2013-2015 <a href="#">极客学院</a> <a href="#">jikexueyuan.com</a> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056</p>
+        </div>
+    </div>
+    <!--30天-->
+    <div class="vip_days">
+        <span></span>
+        <a href="#"></a>
+    </div>
+    <!--马上报名-->
+    <div class="apply">
+        <span></span>
+        <a href="#"></a>
+    </div>
+    <!--返回顶部-->
+    <div class="gotop"><span></span> <span><img src="img/erweima.png"></span> <span></span> <span><div><p>在线时间</p><p>工作日9:00-21:00在线</p><i></i></div></span></div>
+</body>
+
+</html>

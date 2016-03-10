@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+/*职业路径图*/
+
+#profession {
+    height: 597px;
+    .proBox {
+        @include w_h(198px, 298px);
+        float: left;
+        a {
+            @include w_h(197px, 297px);
+            position: absolute;
+            border: 1px solid $color-border;
+            border-left: 1px solid rgba(253, 255, 253, 0);
+            &:hover {
+                border: 1px solid $color-green;
+                .proBoxBtn {
+                    background: $color-green;
+                    color: #fff;
+                }
+            }
+        }
+        img {
+            width: 197px;
+        }
+        p {
+            @include font-size(15px);
+            text-align: center;
+            line-height: 65px;
+        }
+        span {
+            display: block;
+            @include font-size(13px);
+            text-align: center;
+            color: #666;
+            line-height: 20px;
+        }
+        .proBoxL {
+            border-left: 1px solid $color-border;
+        }
+        .proBoxB {
+            border-top: 1px solid rgba(253, 255, 253, 0);
+        }
+        &:hover .proBoxBoder {
+            display: block;
+        }
+        .proBoxBtn {
+            border: 1px solid $color-green;
+            @include w_h(138px, 33px);
+            background: #f3fff6;
+            color: $color-green;
+            margin: 18px auto;
+            text-align: center;
+            line-height: 33px;
+            @include font-size(16px);
+            @include transition(background 0.3s ease-in, color 0.3s ease-in);
+        }
+    }
+}

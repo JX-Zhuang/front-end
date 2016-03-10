@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+/*右侧广告*/
+
+.vip_days {
+    @extend .ad;
+    top: 50px;
+    @include w_h(106px, 200px);
+    a {
+        display: block;
+        @include w_h(106px, 200px);
+        background: url(../img/30days.png) no-repeat;
+    }
+    span {
+        @extend .close;
+    }
+}
+.apply {
+    @extend .ad;
+    top: 300px;
+    @include w_h(106px, 126px);
+    a {
+        display: block;
+        @include w_h(106px, 126px);
+        background: url(../img/4months.png) no-repeat;
+    }
+    span {
+        @extend .close;
+    }
+}

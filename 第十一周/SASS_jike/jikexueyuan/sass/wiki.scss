@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import "compass/css3";
+@import "mixin";
+@import "public";
+/*Wiki*/
+
+#wiki {
+    height: 370px;
+    .wikiBox {
+        float: left;
+        width: 332px;
+        height: 368px;
+        .wikiBox-inner {
+            height: 348px;
+            width: 316px;
+            padding-top: 20px;
+            padding-left: 15px;
+            border: 1px solid $color-border;
+            border-left: 1px solid rgba(253, 255, 253, 0);
+            &:hover {
+                border: 1px solid #66d178;
+            }
+            p:first-child {
+                @include font-size(15px);
+            }
+            .wikiBox-middle {
+                text-align: center;
+                line-height: 25px;
+                margin-top: 10px;
+                width: 316px;
+                height: 254px;
+                a {
+                    display: inline-block;
+                    float: left;
+                    margin-right: 10px;
+                    span {
+                        @include font-size(12px);
+                        color: #999;
+                    }
+                    .img-box {
+                        position: relative;
+                        height: 196px;
+                        width: 142px;
+                        border-radius: 5px;
+                        background: #999;
+                        span {
+                            position: absolute;
+                            top: -11px;
+                            right: -10px;
+                            width: 40px;
+                            height: 20px;
+                            background: url(../img/look.png);
+                            background-size: 40px 20px;
+                            display: none;
+                        }
+                        img {
+                            width: 142px;
+                            border-radius: 5px;
+                            @include transform-origin(left);
+                            @include transition(transform .8s ease-in-out);
+                        }
+                        &:hover img {
+                            @include transform(rotateY(20deg));
+                        }
+                        &:hover span {
+                            display: block;
+                        }
+                    }
+                    &:hover p {
+                        color: #66d178;
+                    }
+                    &:hover span {
+                        color: #66d178;
+                    }
+                }
+                p {
+                    @include font-size(13px);
+                }
+            }
+            .wikiBox-bottom {
+                width: 306px;
+                @include font-size(12px);
+                a {
+                    display: block;
+                    height: 18px;
+                    &:hover {
+                        p {
+                            color: #66d178;
+                        }
+                        span {
+                            color: #66d178;
+                        }
+                    }
+                }
+                p {
+                    float: left;
+                    color: #999;
+                    @include font-size(12px);
+                }
+                span {
+                    float: right;
+                    color: #999;
+                }
+            }
+        }
+        .wikiBox-left {
+            border-left: 1px solid $color-border;
+        }
+    }
+}

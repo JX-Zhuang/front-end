@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "compass/css3";
+.container {
+    width: 730px;
+    height: 425px;
+    margin: 20px auto;
+    @include box-sizing(border-box);
+    p {
+        text-align: center;
+    }
+}
+
+.container_header {
+    height: 170px;
+    @include box-sizing(border-box);
+    padding: 10px;
+    .container_header-left {
+        float: left;
+        p {
+            &:first-child {
+                margin: 0;
+                width: 265px;
+                height: 110px;
+                line-height: 110px;
+            }
+        }
+    }
+    .container_header-right {
+        @include box-sizing(border-box);
+        float: right;
+        width: 350px;
+        p {
+            &:last-child {
+                &:after {
+                    content: "青岛二中";
+                }
+            }
+        }
+    }
+}
+
+.container_middle {
+    @include box-sizing(border-box);
+    height: 165px;
+    ul {
+        float: left;
+        margin: 0;
+        li {
+            list-style: none;
+            width: 27px;
+            float: left;
+            text-align: center;
+        }
+    }
+}
+
+.container_footer {
+    @include box-sizing(border-box);
+    height: 65px;
+    padding: 0 65px;
+}
+
+.arrows {
+    position: relative;
+    height: 7px;
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -15px;
+    }
+}
